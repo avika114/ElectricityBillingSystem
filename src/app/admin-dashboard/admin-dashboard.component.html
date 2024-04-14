@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin-dashboard.component.css">
+</head>
+<body>
+  <nav id="nav-bar">
+    <div id="nav-header">
+      <a id="nav-title" routerLink="/home" target="_blank">
+        <div class="logo">
+          <img src="../../assets/logo.jpg" alt="Electricity Billing System Logo">
+        </div>
+        <div class="TagLine">
+          <h1>ElectriPay</h1>
+        </div>
+      </a>
+      <label for="nav-toggle">
+        <span id="nav-toggle-burger"></span>
+      </label>
+    </div>
+    <div id="nav-content">
+      <div class="nav-button" routerLink="/admin-dashboard">
+        <i class="fas fa-tachometer-alt"></i><span>Dashboard</span>
+      </div>
+      <div class="nav-button" routerLink="/admin-user">
+        <i class="fas fa-users"></i><span>Users</span>
+      </div>
+      <div class="nav-button" routerLink="/ad-bills">
+        <i class="fas fa-file-invoice-dollar"></i><span>Bills</span>
+      </div>
+      <div class="nav-button" routerLink="/ad-payments">
+        <i class="fas fa-money-check-alt"></i><span>Payments</span>
+      </div>
+      <div class="nav-button" routerLink="/admin-signin">
+        <i class="fas fa-sign-out-alt"></i><span>Logout</span>
+      </div>
+      <div id="nav-content-highlight"></div>
+    </div>
+    <div id="nav-footer">
+      <div id="nav-footer-heading">
+        <div id="nav-footer-titlebox">
+          <span id="nav-footer-subtitle">Admin</span>
+        </div>
+        <label for="nav-footer-toggle">
+          <i class="fas fa-caret-up"></i>
+        </label>
+      </div>
+    </div>
+  </nav>
+ 
+  <header>
+    <div class="btn-group">
+      <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Name
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" routerLink="/admin-dashboard">Dashboard</a></li>
+        <li><a class="dropdown-item" routerLink="/admin-signin">Logout</a></li>
+      </ul>
+    </div>
+  </header>
+ 
+  <main>
+    <!-- Main content here -->
+  </main>
+  <footer>
+    <p>&copy; 2024 Admin Dashboard Page. All rights reserved.</p>
+</footer>
+</body>
+</html>

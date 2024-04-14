@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  
+  background-color: #f5e6ca;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  background-color: #f6ca45;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+
+.logo img {
+  width: 80px;
+  height: 80px;
+
+  margin-right: 10px;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-5px);
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  color: #ff7b00;
+}
+
+.contact-us {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contact-form {
+  padding: 20px;
+  background: linear-gradient(to bottom right, #ffebcd, #eedd82);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 40px);
+    max-width: 75%;
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+}
+
+.main {
+  padding: 20px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-item {
+  flex: 0 1 auto;
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.logo-item img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.logo-item h2 {
+  margin-bottom: 10px;
+}
+
+.logo-item p {
+  margin: 5px 0;
+}
+
+a {
+  color: #ff8000;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 150px;
+  height: 65px;
+  margin-right: 10px;
+  padding-left: 20px;
+ margin-top: 15px;
+  padding-bottom: 15px;
+}
+
+h1 {
+  font-size: 42px;
+  padding-right: 600px;
+  margin-right: 10px;
+}
+
+.company-logo {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.animated-logo {
+  width: 50px;
+  height: auto;
+  animation: subtle-move 2s infinite alternate;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.contact-form button:hover {
+  background-color: #ff7b00;
+}
+
+.contact-form button {
+  background-color: #f5b433;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #ff7b00;
+}
+
+.contact-info {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+    position: relative;
+}

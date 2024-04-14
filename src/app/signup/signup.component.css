@@ -1,0 +1,134 @@
+/* Improved UI styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffefc0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure footer sticks to the bottom */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f6ca45;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo {
+  height: 5rem;
+  width: 5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: bounce 1s infinite alternate;
+}
+h2{
+  padding-bottom: 10px;
+  padding-left: 210px;
+}
+.header h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-left: 1rem;
+}
+
+.header .navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.header .navigation ul {
+  list-style: none;
+  display: flex;
+}
+
+.header .navigation li {
+  padding: 0 1rem;
+}
+
+.header .navigation a {
+  color:#333;
+  text-decoration: none;
+}
+
+.header .navigation a:hover {
+  color: #f57c00;
+}
+
+.main-section {
+  flex: 1; /* Fill remaining vertical space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem; /* Added top padding */
+}
+
+.signup-container {
+  width: 50%;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-text {
+  font-size: 12px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"] { /* Added input[type="email"] styling */
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 0.5rem; /* Added margin-top to create space between button and input */
+  background-color: #f97d00;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #9d5003;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  position:relative;
+  bottom: 0;
+  width: 100%;
+}

@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .logo img {
+    max-height: 80px;
+    margin: 16px auto;
+    padding-left: 20px;
+    align-items: center;
+  }
+  
+  
+  .TagLine {
+    margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(109.6deg, rgb(112, 242, 181) 1.8%, rgb(255, 247, 131) 50.6%, rgb(35, 145, 57) 100.3%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #d1f5ad;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  #nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 185px;
+    min-height: 100vh;
+    background-color: #204f17;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+  }
+  
+  /* Navigation header */
+  #nav-header.centered {
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #2c3e50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #nav-title {
+    color: #f5f6fa;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+   /* Navigation toggle */
+   #nav-toggle {
+    display: none;
+  }
+  
+  #nav-toggle-burger {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  #nav-toggle-burger span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 2px;
+    background-color: #f5f6fa;
+  }
+  
+  /* Navigation content */
+  #nav-content {
+    flex-grow: 1;
+    width: 100%;
+    padding: 16px 0;
+    overflow-y: auto;
+  }
+  
+  .nav-button {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #4CAF50;
+  }
+  
+  .nav-button .fas {
+    margin-right: 10px;
+  }
+  
+  /* Navigation footer */
+  #nav-footer {
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    border-top: 1px solid #204f17;
+    margin-top: auto; /* Push footer to the bottom */
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+    align-items: center;
+    background-color: #3f7534;
+  }
+  
+  #nav-footer-heading {
+    display: flex;
+    align-items: center;
+  }
+  
+  #nav-footer-title {
+    color: #f5f6fa;
+    text-decoration: none;
+  }
+  
+  #nav-footer-subtitle {
+    color: #8392a5;
+    font-size: 0.8rem;
+  }
+  
+  /* Add this at the end of your CSS */
+  #logout-button {
+    background: none;
+    border: none;
+    color: #f5f6fa;
+    font-size: 1rem;
+    cursor: pointer;
+    transition:color 0.3s ease;
+  }
+  
+ 
+  #logout-button .fas {
+    margin-right: 10px;
+  }
+  
+  /* Add CSS for aligning header content to the right */
+  header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+    align-items: center;
+    background-color: #3f7534;
+  }
+  h1{
+    font-size: 35px;
+    padding-left:10px;
+    text-align: center;
+  }
+  
+  .btn-group {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .btn-group .btn {
+    background-color: #14341b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn-group .btn:hover {
+    background-color: #35671e;
+  }
+  
+  .btn-group .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #48ac32;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .btn-group:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .btn-group .dropdown-menu a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .btn-group .dropdown-menu a:hover {
+    background-color: #35671e;
+  }
+
+  footer {
+    text-align: center;
+    background-color: #204f17;
+    color: white;
+    padding-left: 50px ;
+    margin-top: auto; /*Push footer to the bottom
+    /* margin-top: -100px; */
+  }
+  
